@@ -9,7 +9,7 @@ export default function WelcomeScreen( { navigation } : any) {
             <Image source={require('../assets/img/como.png')}
             style={styles.img}
             />
-            <TouchableOpacity onPress={() => navigation.navigate('Tabs')}>
+            <TouchableOpacity style={styles.text} onPress={() => navigation.navigate('Tabs')}>
                 <Text style={styles.text}>INGRESAR</Text>
             </TouchableOpacity>
         </View>
@@ -26,13 +26,14 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 30,
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        marginTop: 80
     },
     text:{
         textAlign: 'center',
         fontSize: 20,
         fontWeight: 'bold',
-        marginTop: 20,
-        textDecorationLine: 'underline'
+        textDecorationLine: 'underline',
+        backgroundColor: 'white'
     }
 })
