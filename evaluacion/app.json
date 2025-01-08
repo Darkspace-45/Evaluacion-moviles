@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "evaluacion",
+    "slug": "evaluacion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/img/velocidad-de-pagina.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/img/velocidad-de-pagina.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/img/velocidad-de-pagina.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
