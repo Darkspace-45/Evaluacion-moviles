@@ -6,7 +6,6 @@ import { db } from '../config/Config';
 const Screen3 = () => {
     const [id, setId] = useState('');
     const [nuevosDatos, setNuevosDatos] = useState({
-        orden: '',
         fechapedido: '',
         email: '',
         mensaje: '',
@@ -47,13 +46,6 @@ const Screen3 = () => {
                 placeholder="Ingrese el ID"
                 value={id}
                 onChangeText={(text) => setId(text)}
-            />
-
-            <TextInput
-                style={styles.input}
-                placeholder="Nuevo Número de Orden"
-                value={nuevosDatos.orden}
-                onChangeText={(text) => setNuevosDatos({ ...nuevosDatos, orden: text })}
             />
 
             <TextInput

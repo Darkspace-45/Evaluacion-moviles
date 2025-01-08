@@ -4,7 +4,6 @@ import { db } from '../config/Config';
 import { ref, get } from 'firebase/database';
 import Informacion from '../screens/Informacion';
 
-
 const Screen2 = () => {
     const [idBusqueda, setIdBusqueda] = useState('');
     const [registro, setRegistro] = useState(null);
@@ -17,7 +16,6 @@ const Screen2 = () => {
         email: string;
         mensaje: string;
     };
-
 
     useEffect(() => {
         get(ref(db, 'orden/')).then((snapshot) => {
@@ -49,7 +47,7 @@ const Screen2 = () => {
         <TouchableOpacity
             style={styles.item}
             onPress={() => {
-                Alert.alert('Más información', `Detalles de la orden: ${item.mensaje}`);
+                Alert.alert('Más información', `Detalles de la orden: ${item.mensaje}, fecha de compra: ${item.fechapedido}`);
             }}
         >
             <Text style={styles.itemText}>{item.orden}</Text>
